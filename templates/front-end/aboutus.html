@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> PREDICTION OF TUBERCULOSIS </title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Fonts -->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/c490523a50.js" crossorigin="anonymous"></script>
+
+
+    <!-- Custom Animations -->
+
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid top-nav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class=" nav-buttons">
+                            <a href="index.html"><i class="fas fa-user-md"> &nbsp;</i> Tuberculosis &nbsp;  Xpert</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="./about_tb.html">Tuberculosis</a>
+                        </li>
+
+
+                        <li>
+                            <a class="page-scroll" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="http://127.0.0.1:5000/">Predict</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="about-section">
+        <div class="inner-container">
+            <h1> ABOUT US </h1><br>
+            <p class="text">
+                This is website helps a person predict whether they have tuberculosis or not based on their chest X-ray. This web app is used for diagnosis of Pulmonary Tuberculosis using Image Processing and Deep Learning. The detection happens in two phases. In the
+                first phase, the Xray Image is preprocessed with Binary & Otsu Thresholding with Histogram Equalization. The second phase consists of the prediction of tuberculosis on the pretrained model. <br>
+            </p>
+
+
+        </div>
+    </div>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+        
+        .about-section {
+            background: url(./img/backgrounds/services-bg.jpg) no-repeat left;
+            background-size: cover;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            padding: 80px 90px;
+            background-position: center;
+            width: 100%;
+        }
+        
+        .inner-container {
+            width: 90%;
+            left: 50%;
+            background-color: #fdfdfd;
+            padding: 100px 150px;
+            margin-left: 70px;
+        }
+        
+        .inner-container h1 {
+            margin-bottom: 10px;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: Century Schoolbook;
+            text-align: center;
+            letter-spacing: 1px;
+            justify-content: center;
+        }
+        
+        .text {
+            font-size: 25px;
+            color: #545454;
+            line-height: 30px;
+            text-align: left;
+            margin-bottom: 40px;
+            font-family: Century Schoolbook;
+            text-align: center;
+            letter-spacing: 1px;
+            justify-content: center;
+        }
+        
+        @media screen and (max-width:1200px) {
+            .inner-container {
+                padding: 150px;
+            }
+        }
+        
+        @media screen and (max-width:1000px) {
+            .about-section {
+                background-size: 100%;
+                padding: 100px 50px;
+            }
+            .inner-container {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width:900px) {
+            .about-section {
+                padding: 0;
+            }
+            .inner-container {
+                padding: 60px;
+            }
+        }
+    </style>
